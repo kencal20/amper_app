@@ -25,7 +25,7 @@ export default function Signin({ navigation }) {
         <Text style={styles.forgot}>Forgot Account details?</Text>
         <TouchableOpacity
           onPress={() => {
-            navigation.navigate("Welcome");
+            navigation.navigate("");
           }}
           style={styles.reset_button}
         >
