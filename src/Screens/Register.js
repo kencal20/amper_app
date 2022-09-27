@@ -19,15 +19,12 @@ export default function Register({ navigation }) {
         <TextInput placeholder="Full Name" style={styles.input} />
         <TextInput placeholder="Email" style={styles.input} />
         <TextInput placeholder="Phone Number" style={styles.input} />
-        <TextInput placeholder="Role" style={styles.input} />
-        <TextInput placeholder="Twitter" style={styles.input} />
-        <TextInput placeholder="Linkedin" style={styles.input} />
       </View>
       <TouchableOpacity style={styles.register_button}>
         <Text style={styles.register_buttontxt}>REGISTER</Text>
       </TouchableOpacity>
       <View style={styles.aRy_have}>
-        <Text>Already have an account</Text>
+        <Text>Already have an account?</Text>
         <TouchableOpacity
           onPress={() => {
             navigation.navigate("Signin");
@@ -57,8 +54,6 @@ const styles = StyleSheet.create({
   },
 
   register_button: {
-    position: "absolute",
-    top: 680,
     marginVertical: 10,
     marginHorizontal: 30,
     width: 200,
@@ -74,14 +69,13 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   aRy_have: {
-    marginHorizontal: 30,
-    position: "absolute",
-    top: 750,
+    marginVertical: 10,
+    marginHorizontal: 40,
   },
   signin_txt: {
     position: "absolute",
     bottom: 1,
-    left: 170,
+    left: 180,
     fontSize: 14,
     fontWeight: "bold",
     borderBottomWidth: 1,
